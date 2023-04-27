@@ -6,7 +6,7 @@ https://github.com/cantaro86/Financial-Models-Numerical-Methods/blob/master/6.1%
 
 I due grafici in questione rappresentano la simulazione di un processo di Ornstein-Uhlenbeck **$X_t$**, un processo stocastico regolato dall'equazione differenziale stocastica:
 
-**$dX_t=\kappa (\theta - X_t) dt +\sigma dW_t$****$dX_t=\kappa (\theta - X_t) dt +\sigma dW_t$**
+**$dX_t=\kappa (\theta - X_t) dt +\sigma dW_t$**
 
 Nelle equazioni differenziali stocastiche la soluzione è composta dalla somma di una componente deterministica integrata sul tempo **dt** e di una componente stocastica integrata sul moto Browniano **$dW_t$**. Rispettivamente i parametri dell'equazione sono:
 
