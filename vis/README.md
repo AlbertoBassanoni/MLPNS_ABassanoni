@@ -34,12 +34,12 @@ In questi due plot simulo alcuni processi di Ornstein-Uhlenbeck aventi condizion
 
 ## Bad Plot:
  
-![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/vis/badplot.png)
+![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/vis/badplt.png)
 
 
 ## Good Plot:
 
-![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/vis/goodplot.png)
+![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/vis/goodplt.png)
 
 Sono stati apportati i seguenti miglioramenti:
 
