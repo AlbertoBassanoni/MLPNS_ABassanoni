@@ -1,3 +1,5 @@
+# Esercizio Visualizzazione:
+
 Il grafico è stato simulato in Python all'interno dello script visualization_exercise_ornstein_uhlenbeck.ipynb presente nella cartella, ed è stata tratta ispirazione da un codice di simulazione di un processo di Ornstein-Uhlenbeck per modelli finanziari disponibile pubblicamente sulla piattaforma Github al link:
 
 https://github.com/cantaro86/Financial-Models-Numerical-Methods/blob/master/6.1%20Ornstein-Uhlenbeck%20process%20and%20applications.ipynb
@@ -30,11 +32,11 @@ Dove fissato **X_0** condizione iniziale, decido l'ampiezza dello step temporale
 In questi due plot simulo alcuni processi di Ornstein-Uhlenbeck aventi condizione iniziale **$X_0=2$**, parametri **$\theta=0.5$**, **\kappa=3** e **$\sigma=0.5$**. Per gioco, ho provato a creare un badplot e un goodplot apportando al primo alcune modifiche:
 
 
-**BADPLOT**:
+## Bad Plot:
  
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/vis/badplot.png)
 
 
-**GOODPLOT**:
+## Good Plot:
 
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/vis/goodplot.png)
