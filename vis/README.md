@@ -27,9 +27,9 @@ Asintoticamente, nel limite per **$t \rightarrow \infty$** la media tende al val
 
 **$X_{n+1}=\theta + (X_n-\theta)e^{-\kappa \Delta t} + \sqrt{\frac{\sigma^2}{2\kappa}(1-e^{-2 \kappa \Delta t})}\epsilon_n$**
 
-Dove fissato **X_0** condizione iniziale, decido l'ampiezza dello step temporale **$\Delta t$**, decido il numero di step e calcolo **$\epsilon_n \sim \mathcal{N}(0,1)$** distribuzione Gaussiana con media nulla e varianza unitaria. 
+Dove fissato **$X_0$** condizione iniziale, decido l'ampiezza dello step temporale **$\Delta t$**, decido il numero di step e calcolo **$\epsilon_n \sim \mathcal{N}(0,1)$** distribuzione Gaussiana con media nulla e varianza unitaria. 
 
-In questi due plot simulo alcuni processi di Ornstein-Uhlenbeck aventi condizione iniziale **$X_0=2$**, parametri **$\theta=0.5$**, **\kappa=3** e **$\sigma=0.5$**. Per gioco, ho provato a creare un badplot e un goodplot apportando al primo alcune modifiche:
+In questi due plot simulo alcuni processi di Ornstein-Uhlenbeck aventi condizione iniziale **$X_0=2$**, parametri **$\theta=0.5$**, **$\kappa=3$** e **$\sigma=0.5$**. Per gioco, ho provato a creare un badplot e un goodplot apportando al primo alcune modifiche:
 
 
 ## Bad Plot:
