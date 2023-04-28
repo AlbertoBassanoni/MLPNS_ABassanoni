@@ -8,7 +8,7 @@ I due grafici in questione rappresentano la simulazione di un processo di Ornste
 
 **$dX_t=\kappa (\theta - X_t) dt +\sigma dW_t$**
 
-Nelle equazioni differenziali stocastiche la soluzione è composta dalla somma di una componente deterministica integrata sul tempo **dt** e di una componente stocastica integrata sul moto Browniano **$dW_t$**. Rispettivamente i parametri dell'equazione sono:
+Nelle equazioni differenziali stocastiche la soluzione è composta dalla somma di una componente deterministica integrata sul tempo **$dt$** e di una componente stocastica integrata sul moto Browniano **$dW_t$**. Rispettivamente i parametri dell'equazione sono:
 
 - **$\kappa>0$** coefficiente di mean reversion;
 - **$\theta$** coefficiente di drift;
