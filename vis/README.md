@@ -45,7 +45,7 @@ Sono stati apportati i seguenti miglioramenti:
 
 - Sono state inserite le labels negli assi, in quanto nel primo erano mancanti;
 - Nel titolo sono stati specificati i valori dei parametri rilevanti della simulazione e il valore iniziale da cui parte la time series;
-- Sono state rimosse delle time series, in quanto ridondanti ai fini della simulazione che creano confusione ed ambiguità a livello visivo, impedendo di focalizzarsi sull'aspetto importante del grafico, che è mostrare che i processi tendono asintoticamente per **$t\rightarrow \infty$** al valore **$theta=0.5$**;
+- Sono state rimosse delle time series, in quanto ridondanti ai fini della simulazione che creano confusione ed ambiguità a livello visivo, impedendo di focalizzarsi sull'aspetto importante del grafico, che è mostrare che i processi tendono asintoticamente per **$t\rightarrow \infty$** al valore **$\theta=0.5$**;
 - E' stata inserita una yline di alto spessore marcata in rosso per sottolineare che i processi fluttuano attorno al valor medio e una colorbar azzurra per rappresentare le fluttuazioni di una deviazione standard asintotica;
 - E' stato ridotto lo spessore delle time series per dare maggior rilevanza alla yline rappresentante il valor medio;
 - Sono stati allungati i tempi della simulazione, in modo da poter osservare le fluttuazioni attorno al valor medio del processo di Ornstein-Uhlenbeck per tempi lunghi;
