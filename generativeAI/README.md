@@ -22,7 +22,7 @@ Tutte le immagini a low e high resolution sono riportate in bianco e nero. Qui s
 ## Sequential Dense Neural Network:
 
 Low resolution:
-![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_35x35_seq.png)
+![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_low_res_35x35_seq.png)
 
 High resolution:
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_70x70_sequential.png)
@@ -30,7 +30,7 @@ High resolution:
 ## Convolutional Neural Network:
 
 Low resolution:
-![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_32x32_conv.png)
+![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_low_res_32x32_conv.png)
 
 High resolution:
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_64x64_convolutional.png)
