@@ -51,7 +51,7 @@ Questo tipo di neural network come si può vedere dal plotting della loss functi
 
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/loss_sequential_NN.png)
 
-Ricordiamo che questa tipologia di autoencoders è soggetta ad un problema importante: il posterior collapse. L'autoencoder impara come riprodurre il valor medio dei dati, e ciò dunque significa che questo tipo di encoder è fortemente sensibile a come è composto e bilanciato il training set. In questo caso, la mia immagine non è stata migliorata in maniera soddisfacente in quanto l'autoencoder non riconosce sufficiente similiarità della mia immagine con la media delle immagini che ha imparato nel training set, ed essendo il nostro training set abbastanza biased verso una tipologia specifica di immagini (studenti maschi bianchi, con volto perfettamente centrato), questo tipo di neural network non è quello ottimale!
+Ricordiamo che questa tipologia di autoencoders è soggetta ad un problema importante: il posterior collapse. L'autoencoder impara come riprodurre il valor medio dei dati, e ciò dunque significa che questo tipo di encoder è fortemente sensibile a come è composto e bilanciato il training set. In questo caso, la mia immagine non è stata migliorata in maniera soddisfacente in quanto l'autoencoder non riconosce sufficiente similiarità della mia immagine con la media delle immagini che ha imparato nel training set, ed essendo il nostro training set abbastanza biased verso una tipologia specifica di immagini (studenti maschi bianchi, con volto perfettamente centrato e su sfondo chiaro), questo tipo di neural network non è quello ottimale!
 
 ## Convolutional Neural Network:
 
