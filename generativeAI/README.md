@@ -32,7 +32,7 @@ High resolution:
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_70x70_sequential.png)
 
 
-Il Sequential Dense Network è composto da un Multilayer Perceptron avente seguente struttura:
+Il Sequential Dense Neural Network è un Multilayer Perceptron che da al mio autoencoder seguente struttura:
 
 ENCODER:
 - Input Layer
@@ -65,3 +65,32 @@ High resolution:
 
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_64x64_convolutional.png)
 
+Il Convolutional Neural Network che compone il mio autoencoder ha seguente struttura:
+
+ENCODER:
+- Input Layer (Img_size)
+- 512 Neurons Convolutional2D Layer (Img_size)
+- 256 Neurons Convolutional2D Layer (Img_size)
+- 128 Neurons Convolutional2D Layer (Img_size)
+- 128 Neurons (2,2)-MaxPooling2D Layer (Img_size/2)
+- 128 Neurons Convolutional2D Layer (Img_size/2)
+- 128 Neurons (2,2)-MaxPooling2D Layer (Img_size/4)
+
+BOTTLE NECK:
+- 128 Neurons Convolutional2D Layer (Img_size/4)
+
+DECODER:
+- 128 Neurons (2,2)-UpSampling2D Layer (Img_size/4)
+- 128 Neurons Convolutional2D Layer (Img_size/2)
+- 128 Neurons (2,2)-UpSampling2D Layer (Img_size/2)
+- 128 Neurons Convolutional2D Layer (Img_size)
+- 128 Neurons (2,2)-UpSampling2D Layer (Img_size)
+- 256 Neurons Convolutional2D Layer (2*Img_size)
+- 512 Neurons Convolutional2D Layer (2*Img_size)
+- Output Layer (2*Img_size)
+
+Questo tipo di neural network come si può vedere dal plotting della loss function non è soggetto ad overfitting, non essendovi pressoché differenza tra le loss function sul training set e sul validation set (o test set) dei dati. E' stata utilizzata nel running delle epochs su cui avviene il learning della rete una funzione di callback, avente come threshold del learning process un valore della loss pari a **$10^{-4}$**. 
+
+![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/loss_convolutional_NN.png)
+
+Questa tipologia di neural network pare essere migliore come autoencoder per l'operazione di image resolution, e questo perché in questa tipologia di autoencoder non si è soggetti al problema del posterior collapse. Infatti, attraverso la riduzione dimensionale del feature space delle varie immagine attraverso l'azione dei MaxPooling2D layers, si effettuano operazioni di convoluzione che hanno un effetto complessivo di denoising delle immagini, e alla fine il neural network restituisce un'immagine avente size doppia rispetto a quella iniziale che ha risoluzione più alta della precedente. A differenza del sequential dense neural network, qui non ha importanza quale sia la media del nostro training set e la sua similarità con la mia immagine, ma conta di quanto vengono ristrette ed allargate le Img_size nei processi di encoding e di decoding.
