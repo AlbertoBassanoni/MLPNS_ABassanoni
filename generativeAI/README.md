@@ -31,6 +31,28 @@ High resolution:
 
 ![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/imm_70x70_sequential.png)
 
+
+Il Sequential Dense Network è composto da un Multilayer Perceptron avente seguente struttura:
+
+ENCODER:
+- Input Layer
+- 256 Neurons Dense Layer
+- 128 Neurons Dense Layer
+
+BOTTLE NECK:
+- 128 Neurons Dense Layer
+
+DECODER:
+- 128 Neurons Dense Layer
+- 258 Neurons Dense Layer
+- Output Layer
+
+Questo tipo di neural network come si può vedere dal plotting della loss function è soggetto ad un problema di overfitting, per via della significativa differenza della loss function sul training set e sul validation set (o test set) dei dati. E' stata utilizzata nel running delle epochs su cui avviene il learning della rete una funzione di callback, avente come threshold del learning process un valore della loss pari a **$10^{-4}$**. 
+
+![image](https://github.com/AlbertoBassanoni/MLPNS_ABassanoni/blob/main/generativeAI/loss_sequential_NN.png)
+
+Ricordiamo che questa tipologia di autoencoders è soggetta ad un problema importante: il posterior collapse. L'autoencoder impara come riprodurre il valor medio dei dati, e ciò dunque significa che questo tipo di encoder è fortemente sensibile a come è composto e bilanciato il training set. In questo caso, la mia immagine non è stata migliorata in maniera soddisfacente in quanto l'autoencoder non riconosce sufficiente similiarità della mia immagine con la media delle immagini che ha imparato nel training set, ed essendo il nostro training set abbastanza biased verso una tipologia specifica di immagini (studenti maschi bianchi, con volto perfettamente centrato), questo tipo di neural network non è quello ottimale!
+
 ## Convolutional Neural Network:
 
 Low resolution:
